@@ -21,10 +21,6 @@
 
  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -37,14 +33,22 @@
     <button id="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
   
     <div class="container">
-      <span>IP Address</span>
-      <span id="ip"></span>
-      <span>Location</span>
-      <span id="location"></span>
-      <span>Timezone</span>
-      UTC <span id="timezone"></span> <!-- add offset value dynamically using the API -->
-      <span>ISP</span>
-      <span id="isp"></span>
+      <div class="data-wrap">
+        <span>IP Address</span>
+        <span id="ip">192.212.174.101</span>
+      </div>
+      <div class="data-wrap">
+        <span>Location</span>
+        <span id="location">Brooklyn, NY 10001</span>
+      </div>
+      <div class="data-wrap">
+        <span>Timezone</span>
+        <span id="timezone">UTC -05:00</span>
+      </div> <!-- add offset value dynamically using the API -->
+      <div class="data-wrap">
+        <span>ISP</span>
+        <span id="isp">SpaceX Starlink</span>
+      </div>
     </div>
   </main>
 
@@ -52,7 +56,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Netanel Kadosh</a>.
   </div>
 </body>
 </html>
