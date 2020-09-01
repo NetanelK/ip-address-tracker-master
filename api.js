@@ -14,7 +14,21 @@ $(document).ready(function () {
     //             lng: responseText.location.lng
     //         })
     //     });
-    var map = L.map('mapid').setView([51.505, -0.09], 2)
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13)
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+    var icon = L.icon({
+        iconUrl: './images/icon-location.svg',
+
+        iconSize: [46, 56], // size of the icon
+        // shadowSize: [50, 64], // size of the shadow
+        iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+        shadowAnchor: [4, 62],  // the same for the shadow
+        popupAnchor: [-3, -76]
+    })
+
+    var marker = L.marker([51.505, -0.09], { icon: icon }).addTo(mymap)
 
 })
 
