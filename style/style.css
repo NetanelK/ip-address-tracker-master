@@ -97,7 +97,7 @@ body {
   width: 90%;
   max-width: 350px;
   margin: 1em auto 0 auto;
-  padding: .5em 0 1em 0;
+  padding: .5em 0 1.5em 0;
 }
 
 .container span:not([id]) {
@@ -140,7 +140,7 @@ body {
     background-color: #969696;
     position: absolute;
     left: 95%;
-    top: 15%;
+    top: 7.5%;
   }
   .container .data-wrap:last-of-type::after {
     display: none;
