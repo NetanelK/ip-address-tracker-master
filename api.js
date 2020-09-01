@@ -40,7 +40,7 @@ $(document).ready(function () {
         updateSite({
             ip: responseText.ip,
             location: `${responseText.location.city}, ${responseText.location.country} ${responseText.location.postalCode}`,
-            timezone: responseText.location.timezone,
+            timezone: `UTC ${responseText.location.timezone}`,
             isp: responseText.isp
         }, {
             lat: responseText.location.lat,
